@@ -1,0 +1,88 @@
+<header class="p-5 bg-white shadow fixed top-0 left-0 w-full z-10">
+  <nav class="md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <a href="/"
+        ><img class="h-10 w-50 inline cursor-pointer" src="/img/logo1.png"
+      /></a>
+      <span class="block md:hidden">
+        <i class="fa-solid fa-bars" name="menu" onclick="Menu(this)"></i>
+        <i
+          class="fa-solid fa-xmark hidden"
+          name="close"
+          style="display: none"
+          onclick="Menu(this)"
+        ></i>
+      </span>
+    </div>
+    <ul
+      class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+    >
+      <li class="mx-4 my-6 md:my-0">
+        <a
+          class="text-xl text-blue-900 hover:text-pink-800 duration-500"
+          href="/"
+          >Home</a
+        >
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a
+          class="text-xl text-blue-900 hover:text-pink-800 duration-500"
+          href="/about"
+          >About</a
+        >
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a
+          class="text-xl text-blue-900 hover:text-pink-800 duration-500"
+          href="/contact"
+          >Contact</a
+        >
+      </li>
+      <% if(isLoggedIn) { %>
+      <button
+        class="bg-pink-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-pink-800 rounded"
+      >
+        <a href="/auth/logout">Logout</a>
+      </button>
+      <% } else { %>
+      <li class="mx-4 my-6 md:my-0">
+        <a
+          class="text-xl text-blue-900 hover:text-pink-800 duration-500"
+          href="/auth/login"
+          >Login</a
+        >
+      </li>
+      <button
+        class="bg-pink-400 text-white duration-500 px-6 py-2 mx-4 hover:bg-pink-800 rounded"
+      >
+        <li class="mx-2 my-4 md:my-0 relative group">
+          <a>Get Started</a>
+          <ul class="absolute hidden group-hover:block group-hover:rounded-xl bg-white shadow-lg py-2">
+            <li class="px-4 py-2 hover:bg-gray-200">
+              <a
+                class="text-blue-900 hover:text-pink-800 duration-500"
+                href="/auth/vendorRegister"
+                >Register Vendor</a
+              >
+            </li>
+            <li class="px-4 py-2 hover:bg-gray-200">
+              <a
+                class="text-blue-900 hover:text-pink-800 duration-500"
+                href="/auth/customerRegister"
+                >Register Customer</a
+              >
+            </li>
+            <li class="px-4 py-2 hover:bg-gray-200">
+              <a
+                class="text-blue-900 hover:text-pink-800 duration-500"
+                href="/auth/riderRegister"
+                >Register Rider</a
+              >
+            </li>
+          </ul>
+        </li>
+      </button>
+      <% } %>
+    </ul>
+  </nav>
+</header>
