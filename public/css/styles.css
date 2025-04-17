@@ -48,7 +48,7 @@
 
 
 section {
-    @apply py-15 md:py-28;
+    @apply py-7 md:py-18;
 }
 
 .nav-link {
@@ -70,4 +70,12 @@ section {
 
 .btn:hover{
     @apply opacity-85;
+}
+
+h2 {
+    @apply text-base md:text-xl xl:text-2xl font-bold;
+}
+
+h3 {
+    @apply text-base md:text-lg xl:text-xl font-bold;
 }

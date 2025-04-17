@@ -14,7 +14,7 @@
     <%- include('layouts/header'); -%> <%- include('layouts/footer'); -%>
     <main>
       <!-- Hero section -->
-      <section class="py-5 h-screen">
+      <section class="py-5">
         <div
           class="container container-sm container-md container-lg container-xl flex flex-wrap items-center justify-center mx-auto mt-10 md:px-12 md:flex-row"
         >
@@ -48,13 +48,83 @@
       </section>
 
       <!-- Top vendors section -->
-      <section></section>
+      <section class="container mx-auto bg-teal-50">
+        <div class="text-center mb-10 mt-2">
+          <h2 class="font-extrabold font-serif">Top Vendors on VibandaConnect</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-md:w-2/ max-md:place-items-center">
+          <div class="shadow-md hover:shadow-lg duration-300 p-6 rounded-md bg-slate-50">
+            <div>
+              <img src="./img/groceriesimg1.jpg" alt="" class="rounded-full">
+            </div>
+            <h3 class="text-2xl font-bold text-slate-800 my-3 text-center">Imaginary Vendor 1</h3>
+          </div>
+          <div class="shadow-md hover:shadow-lg duration-300 p-6 rounded-md bg-slate-50">
+            <div>
+              <img src="./img/groceriesimg2.jpg" alt="" class="rounded-full">
+            </div>
+            <h3 class="text-2xl font-bold text-slate-800 my-3 text-center">Imaginary Vendor 2</h3>
+          </div>
+          <div class="shadow-md hover:shadow-lg duration-300 p-6 rounded-md bg-slate-50">
+            <div>
+              <img src="./img/groceriesimg3.jpg" alt="" class="rounded-full">
+            </div>
+            <h3 class="text-2xl font-bold text-slate-800 my-3 text-center">Imaginary Vendor 3</h3>
+          </div>
+        </div>
+      </section>
 
       <!-- Delivery done section -->
-      <section></section>
+      <section class="container mx-auto border-1 border-gray-100">
+        <div class="text-center mb-10 mt-2">
+          <h2 class="font-extrabold font-serif">Fast Delivery</h1>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-md:w-2/ max-md:place-items-center">
+          <div class="shadow-md hover:shadow-lg duration-300 p-6 rounded-md bg-slate-50">
+            <div>
+              <img src="./img/deliveryimg1.jpg" alt="" class="rounded-md">
+            </div>
+            <h3 class="text-2xl font-bold text-slate-800 mb-3">Order from Top Vendors</h3>
+          </div>
+          <div class="shadow-md hover:shadow-lg duration-300 p-6 rounded-md bg-slate-50">
+            <div>
+              <img src="./img/deliveryimg2.jpg" alt="" class="rounded-md">
+            </div>
+            <h3 class="text-2xl font-bold text-slate-800 mx-3 text-center">Fast Delivery</h3>
+          </div>
+          <div class="shadow-md hover:shadow-lg duration-300 p-6 rounded-md bg-slate-50">
+            <div>
+              <img src="./img/deliveryimg3.jpg" alt="" class="rounded-md">
+            </div>
+            <h3 class="text-2xl font-bold text-slate-800 mx-3 text-center">Groceries Delivery</h3>
+          </div>
+        </div>
+      </section>
 
       <!-- CTA section -->
-      <section></section>
+      <section class="container mx-auto bg-teal-50">
+        <div class="text-center mb-10 mt-2">
+          <h2 class="font-extrabold font-serif">Join the VibandaConnect Community</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-md:w-2/ max-md:place-items-center">
+          <div class="relative shadow-md hover:shadow-lg duration-300 p-6 rounded-md bg-slate-50">
+            <img src="./img/vendor.jpg" alt="" class="rounded-md">
+            <a href="/auth/vendorRegister" 
+               class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-bold opacity-0 hover:opacity-100 transition-opacity">
+              Become a Vendor
+            </a>
+            <h3 class="text-2xl font-bold text-slate-800 mx-3 text-center mt-4">Become a Vendor</h3>
+          </div>
+          <div class="relative shadow-md hover:shadow-lg duration-300 p-6 rounded-md bg-slate-50">
+            <img src="./img/rider.jpg" alt="" class="rounded-md">
+            <a href="/auth/riderRegister" 
+               class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-bold opacity-0 hover:opacity-100 transition-opacity">
+              Become a Rider
+            </a>
+            <h3 class="text-2xl font-bold text-slate-800 mx-3 text-center mt-4">Become a Rider</h3>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="/js/scripts.js"></script>
